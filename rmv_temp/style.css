@@ -1,0 +1,149 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#top-banner img {
+    height: 192px;
+    border-radius: 50%;
+    align: center;
+}
+
+body {
+    background-color: #f0f0f0;
+    transition: all ease-in 0.8s;
+}
+
+body.dark-theme {
+    background-color: #0f0f10;
+    transition: all ease-out 0.8s;
+}
+
+h1,h2,h3,h4,h5,p {
+    font-family: "Open Sans", serif;
+    color: #0f0f10; 
+    transition: all ease-in 0.8s;
+}
+
+body.dark-theme h1,body.dark-theme h2,body.dark-theme h3,
+body.dark-theme h4,body.dark-theme h5,body.dark-theme p {
+    color: #f0f0f0; 
+    transition: all ease-out 0.8s;
+}
+
+.toggle input[type='checkbox'] {
+    display: none;
+}
+
+.toggle label {
+    height: 32px;
+    width: 52px;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0.0, 0, 0, 0.4);
+    transition: all ease-in-out 0.8s;
+}
+
+.toggle label::before {
+    content: ' ';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background: #000;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    transition: all ease-in-out 0.4s;
+}
+
+.toggle input[type='checkbox']:checked ~ label {
+    background-color: #000;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+}
+
+.toggle input[type='checkbox']:checked ~ label::before {
+    background-color: #fff;
+    transform: translateX(20px);
+}
+
+body.dark-theme a {
+    box-shadow: inset 0 0 0 0 #f0f0f0;
+    color: #f0f0f0;
+}
+
+body.dark-theme a:hover {
+    box-shadow: inset 100px 0 0 0 #f0f0f0;
+    color: #0f0f10;
+}
+
+a {
+    box-shadow: inset 0 0 0 0 #0f0f10;
+    color: #0f0f10;
+    margin: 0 rem;
+    padding: 0 rem;
+    transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    box-shadow: inset 100px 0 0 0 #0f0f10;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer {
+    color: #0f0f10;
+    transition: color 0.8s ease-in-out;
+    font-size: 8;
+}
+
+body.dark-theme footer {
+    color: #f0f0f0;
+    transition: color 0.8s ease-in-out;
+}
+
+.close {
+font-size: 1.5rem;
+}
+  
+.col-12 img {
+    opacity: 0.7;
+    cursor: pointer;
+    margin: 2rem;
+    width: 100%;
+}
+  
+.col-12 img:hover {
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.scroll-container {
+    background-color: rgba(0, 0, 0, 0);
+    /* overflow: auto; */
+    overflow-y: visible;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0px;
+    max-height: 30vw;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+  
+div.scroll-container img {
+    max-height: 20vw;
+    padding: 0px;
+}
+
+/* -------------------- MODAL BELOW HERE --------------------- */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}

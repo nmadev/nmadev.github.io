@@ -1,0 +1,22 @@
+/* unvisited link */
+a:link {
+  color: rgb(0, 0, 0);
+  /* text-decoration: underline; */
+}
+
+/* visited link
+a:visited {
+  color: rgba(51, 0, 255, 0.644);
+} */
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: rgb(0, 0, 0);
+}
+
+a.underline{ text-decoration: underline;}

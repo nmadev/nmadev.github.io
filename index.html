@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">neal ma</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#photography">photography</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- Profile Picture and Name -->
+    <div class="flex flex-col items-center">
+        <div class="avatar">
+            <div class="w-64 rounded-full">
+                <img src="./src/ProfileImage/ProfileMain.jpg" alt="Profile Image" class="rounded-full">
+            </div>
+        </div>
+
+        <h1 class="text-title text-5xl mt-3">neal ma</h1>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container mx-auto mt-5" id="about">
+        <div class="px-4 md:px-20 xl:px-96 py-2 md:py-4">
+            <div class="flex flex-col space-y-2">
+                <div>        
+                    <h2 class="text-2xl font-semibold">about me</h2>
+                </div>
+                <div>
+                    <p>Hi! I'm Neal!</p>
+                </div>
+                <div>
+                    <p>I'm currently an M.S. student at Columbia University studying Earth and Environmental Engineering and concentrating in Sustainable Energy. I previously studied Physics, Computer Science, and Energy at Yale University where I graduated in 2023.</p>
+                </div>
+                <div>
+                    <p>I love nature and the environment and I want to do what I can to help preserve it. I love cooking things, coding, and photography, so you'll see a mix of that stuff throughout here as well as some academic projects I've been working on. I'm looking for Summer 2024 internships and work post-grad starting January 2025 in renewable energy and sustainability, so if you think I may be a good fit, please reach out (nam2252 [at] columbia [dot] edu) or through my <a href="https://www.linkedin.com/in/neal-ma/" class="underline">LinkedIn</a>! :)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <div class="px-4 md:px-20 xl:px-96" id="projects">
+            <div class="flex flex-col space-y-2">
+                <div>
+                    <h2 class="text-2xl font-semibold">projects</h2>
+                </div>
+                <div>
+                    <p>Here are also some projects that I've worked on and are currently working on! You can find other coding projects I've worked on in my <a href="https://github.com/nmadev" class="underline">GitHub</a>.</p>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="collapse bg-base-200">
+                    <input type="checkbox" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Hospital Waste Stream Analysis
+                    </div>
+                    <div class="collapse-content"> 
+                        <p><b>Columbia University: September 2023 - December 2023</b></p>
+                        <p>This project was an analysis of hospital waste stream completed as a final project for <em>EAEE E4011 - Industrial Ecology of Manufacturing</em>. I worked as part of a team of 4 students to analyze cost and emissions impacts of hospital waste streams. I specifically built the Python software and simulation to carry out the Life Cycle Assessment (LCA) of hospital waste streams and model the impacts of different policies/program. Associated code can be found <a href="https://github.com/nmadev/HospitalWasteAnalysis" class="underline">here</a> and project report can be made available upon request.</p>
+                        <div>
+                            <img src="./src/ProjectImages/SankeyCombineCombine.png" alt="Sankey diagram showing one of ." class="px-8">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="collapse bg-base-200">
+                    <input type="checkbox" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Forecasting HVAC Consumption from Environmental and Socioeconomic Factors
+                    </div>
+                    <div class="collapse-content"> 
+                        <p><b>Columbia University: September 2023 - December 2023</b></p>
+                        <p>I built this model for <em>EAEE E4000 - Machine Learning for Environmental Engineering</em>. This model integrates a range of environmental and socioeconomic data to project how energy demand from residential air conditioning systems will change in the United States through 2030. Associated code can be found <a href="https://github.com/nmadev/HVACEnergyConsumptionForecasting" class="underline">here</a> and project report can be made available upon request.</p>
+                        <!-- TODO: Add 3 frame gif of 2020, 2025, 2030 -->
+                        <img src="./src/ProjectImages/EnergyConsumptionIncrease.png" alt="Energy consumption density projections for 2020, 2025, and 2030." class="px-8">
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="collapse bg-base-200">
+                    <input type="checkbox" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Integrating Floating Solar-PV into Rocky River Hydropower Plant
+                    </div>
+                    <div class="collapse-content"> 
+                        <p><b>Yale University: September 2022 - May 2023</b></p>
+                        <p>As a part of the <a href="https://www.energy.gov/eere/articles/us-department-energy-announces-winners-2023-hydropower-and-marine-energy-collegiate#:~:text=The%20U.S.%20Department%20of%20Energy,the%20fourth%20annual%20MECC%2C%20respectively." class="underline">Department of Energy's Innaugural Hydropower Collegiate Competition</a>, I worked on a team of 6 students to prepare a case study on Rocky River Hydropower Plant in New Milford, Connecticut. I specifically worked on modeling hydrological factors in different future scenarios along with integrating floating solar-PV units into the powerplant to show economic and energy production outputs. We won first place for the outreach portion of our project and second place overall. The case study can be made available upon request.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="collapse bg-base-200">
+                    <input type="checkbox" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Modeling a Molten Salt Purification Cell for Concentrated Solar Power
+                    </div>
+                    <div class="collapse-content"> 
+                        <p><b>National Renewable Energy Laboratory: May 2022 - August 2022</b></p>
+                        <p>I worked in the Building Energy Science group at the National Renewable Energy Laboratory as a Science Undergradute Laboratory Intern. I worked specifically on developing a multiphysics model in COMSOL to simulate the purification of molten salts in an electrochemical flow cell, a process important to developing long-term concentrated solar power. This model is used to rapidly test and determine optimal cell  parameters for a final purification cell. </p>
+                    </div>
+                </div>
+            
+
+                <!-- Project 1 -->
+                <div class="collapse bg-base-200">
+                    <input type="checkbox" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Comparison of Machine Learning Algorithms for Classification and Quantification of Natural Gas Mixtures
+                    </div>
+                    <div class="collapse-content"> 
+                        <p><b>Air Force Research Laboratory: May 2021 - August 2021</b></p>
+                        <p>Working under the Department of Energy and with Air Force Research Laboratory, I performed a comparative analysis of different machine learning algorithms for classifying and quantifying gasses within certain natural gas mixtures. I published my results <a href="https://iopscience.iop.org/article/10.1149/2754-2726/acbe0c" class="underline">here</a> in February 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Photography  -->
+    <div class="container mx-auto mt-5" id="photography">
+        <div class="px-4 md:px-20 xl:px-96 py-2 md:py-4">
+            <div class="flex flex-col space-y-2">
+                <div>        
+                    <h2 class="text-2xl font-semibold">photography</h2>
+                </div>
+                <div>
+                    <p>Coming soon...</p>
+                </div>
+                <!-- <div>
+                    <p>Hi! I'm Neal!</p>
+                </div>
+                <div>
+                    <p>I'm currently an M.S. student at Columbia University studying Earth and Environmental Engineering and concentrating in Sustainable Energy. I previously studied Physics, Computer Science, and Energy at Yale University where I graduated in 2023.</p>
+                </div>
+                <div>
+                    <p>I love nature and the environment and I want to do what I can to help preserve it. I love cooking things, coding, and photography, so you'll see a mix of that stuff throughout here as well as some academic projects I've been working on. I'm looking for Summer 2024 internships and work post-grad starting January 2025 so if you think I may be a good fit, please reach out (neal [dot] ma [at] aya [dot] yale [dot] edu)! :)</p>
+                </div> -->
+            </div>
+        </div>
+        <!-- Photography -->
+        <!-- <div class="px-4 md:px-20 xl:px-96 pb-8">
+            <div class="flex flex-col space-y-2">
+                <div class="carousel w-full">
+                    <div id="item1" class="carousel-item w-full">
+                      <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+                    </div> 
+                    <div id="item2" class="carousel-item w-full">
+                      <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    </div> 
+                    <div id="item3" class="carousel-item w-full">
+                      <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    </div> 
+                    <div id="item4" class="carousel-item w-full">
+                      <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    </div>
+                  </div> 
+                  <div class="flex justify-center w-full py-2 gap-2">
+                    <a href="#item1" class="btn btn-xs">1</a> 
+                    <a href="#item2" class="btn btn-xs">2</a> 
+                    <a href="#item3" class="btn btn-xs">3</a> 
+                    <a href="#item4" class="btn btn-xs">4</a>
+                  </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center font-small">
+        <div id="copyright" class="pt-4 pb-1">
+            <a href="https://www.linkedin.com/in/neal-ma/" class="link">linkedin</a>
+            <a href="https://github.com/nmadev" class="link">github</a>
+        </div>
+        <div id="copyright" class="pt-1 pb-8">
+            Copyright © Neal Ma 2023
+        </div>
+    </footer>
+</body>
+</html>
