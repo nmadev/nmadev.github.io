@@ -1,1 +1,40 @@
-<body contenteditable onLoad="document.body.innerHTML = localStorage.getItem('nb')" oninput="localStorage.setItem('nb', document.body.innerHTML)"></body>
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">neal ma</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <!-- <li><a href="#photography">photography</a></li> -->
+          </ul>
+        </div>
+    </div>
+
+    <!-- Notepad DIV -->
+    <div contenteditable onload="this.innerHTML = localStorage.getItem('nb')" oninput="localStorage.setItem('nb', this.innerHTML)" style="font-family: Monospace" class="py-8 px-16 border-solid border-2">
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center font-small">
+        <div id="copyright" class="pt-4 pb-1">
+            <a href="https://www.linkedin.com/in/neal-ma/" class="link">linkedin</a>
+            <a href="https://github.com/nmadev" class="link">github</a>
+        </div>
+        <div id="copyright" class="pt-1 pb-8">
+            Copyright © Neal Ma 2023
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- <body contenteditable onLoad="document.body.innerHTML = localStorage.getItem('nb')" oninput="localStorage.setItem('nb', document.body.innerHTML)"></body> -->
